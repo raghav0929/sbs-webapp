@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+/* ── GLOBAL STYLES — paste into src/styles.css ── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --navy: #0d2340;
+  --gold: #c8963e;
+  --gold-light: #e8b85a;
+  --cream: #fdf8f2;
+  --text: #1a1a2e;
+  --muted: #6b7280;
+  --white: #ffffff;
+  --border: #e5e0d8;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text); }
+
+/* Shared section padding */
+section { padding: 90px 40px; }
+
+/* Shared section labels */
+.section-tag {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  color: var(--navy);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.section-sub {
+  font-size: 16px;
+  color: var(--muted);
+  max-width: 560px;
+  line-height: 1.7;
+}
+.container { max-width: 1100px; margin: 0 auto; }
+
+/* Shared buttons */
+.btn-primary {
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: 700;
+  padding: 14px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all .2s;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+.btn-outline {
+  border: 2px solid rgba(255,255,255,.3);
+  color: var(--white);
+  padding: 14px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all .2s;
+  backdrop-filter: blur(4px);
+}
+.btn-outline:hover { border-color: var(--gold); color: var(--gold-light); }
+
+@media (max-width: 768px) {
+  section { padding: 60px 20px; }
+}

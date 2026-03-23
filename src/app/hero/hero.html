@@ -1,0 +1,26 @@
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-badge">Regd. Under Societies Act 1860</div>
+
+    <h1>SBS <span>Educational</span> Society</h1>
+
+    <p>
+      Empowering communities through quality education and vocational training.
+      Committed to skill development across rural and semi-urban Punjab since 2005.
+    </p>
+
+    <div class="hero-btns">
+      <a href="#courses" class="btn-primary">Explore Courses</a>
+      <a href="#about"   class="btn-outline">About Society</a>
+    </div>
+
+    <div class="hero-stats">
+      @for (s of stats; track s) {
+  <div class="stat">
+    <div class="stat-num">{{ s.num }}</div>
+    <div class="stat-label">{{ s.label }}</div>
+  </div>
+}
+    </div>
+  </div>
+</section>

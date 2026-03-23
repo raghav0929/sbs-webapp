@@ -1,0 +1,23 @@
+<section class="centres" id="centres">
+  <div class="container">
+    <div class="section-tag">Our Network</div>
+    <h2 class="section-title">Training Centres</h2>
+    <p class="section-sub">Strategically located centres bringing skill training closer to every community.</p>
+
+    <div class="centres-grid">
+  @for (centre of centres; track centre) {
+    <div class="centre-card">
+      <div class="centre-img" [class]="centre.colorClass">
+        {{ centre.emoji }}
+      </div>
+
+      <div class="centre-info">
+        <h3>{{ centre.name }}</h3>
+        <p>{{ centre.desc }}</p>
+        <a href="#" class="centre-link">Explore more →</a>
+      </div>
+    </div>
+  }
+</div>
+  </div>
+</section>

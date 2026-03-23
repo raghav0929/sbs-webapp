@@ -1,0 +1,19 @@
+<section class="courses" id="courses">
+  <div class="container">
+    <div class="section-tag">Programmes</div>
+    <h2 class="section-title">Courses We Offer</h2>
+    <p class="section-sub">
+      All courses are affiliated with SSC Sector Skill Councils and lead to government-recognised certification.
+    </p>
+
+    <div class="courses-grid">
+      @for (course of courses; track course) {
+  <div class="course-card">
+    <h3>{{ course.title }}</h3>
+    <p>{{ course.desc }}</p>
+    <span class="course-badge">{{ course.badge }}</span>
+  </div>
+}
+    </div>
+  </div>
+</section>

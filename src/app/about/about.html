@@ -1,0 +1,27 @@
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Left: Registration card -->
+      <div class="about-visual">
+        @for (box of regdBoxes; track box) {
+  <div class="regd-box">
+    <h3>{{ box.title }}</h3>
+    <p [innerHTML]="box.text"></p>
+  </div>
+}
+      </div>
+
+      <!-- Right: Text -->
+      <div class="about-text">
+        <div class="section-tag">About Us</div>
+        <h2 class="section-title">Building Futures Through Education</h2>
+        @for (para of paragraphs; track para) {
+  <p>{{ para }}</p>
+}
+        <a href="#contact" class="btn-primary">Get in Touch</a>
+      </div>
+
+    </div>
+  </div>
+</section>

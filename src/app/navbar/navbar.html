@@ -1,0 +1,22 @@
+<nav [class.scrolled]="isScrolled">
+  <div class="nav-logo">
+    <div class="logo-icon">SBS</div>
+    <div class="nav-name">SBS Educational Society</div>
+  </div>
+
+  <ul class="nav-links" [class.open]="menuOpen">
+    <li><a href="#about"   (click)="closeMenu()">About</a></li>
+    <li><a href="#centres" (click)="closeMenu()">Centres</a></li>
+    <li><a href="#courses" (click)="closeMenu()">Courses</a></li>
+    <li><a href="#schemes" (click)="closeMenu()">Schemes</a></li>
+    <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
+  </ul>
+
+  <a href="#contact" class="nav-donate hide-mobile">Apply Now</a>
+
+  <button class="hamburger" (click)="toggleMenu()" [class.active]="menuOpen" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>

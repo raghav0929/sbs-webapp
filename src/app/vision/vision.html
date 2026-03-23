@@ -1,0 +1,17 @@
+<section class="vision" id="vision">
+  <div class="container">
+    <div class="section-tag">Our Mission</div>
+    <h2 class="section-title">What We Stand For</h2>
+    <p class="section-sub">Three pillars that drive everything we do at SBS Educational Society.</p>
+
+    <div class="vision-grid">
+      @for (card of cards; track card) {
+  <div class="vision-card">
+    <div class="card-icon">{{ card.icon }}</div>
+    <h3>{{ card.title }}</h3>
+    <p>{{ card.text }}</p>
+  </div>
+}
+    </div>
+  </div>
+</section>

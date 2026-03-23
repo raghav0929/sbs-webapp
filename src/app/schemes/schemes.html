@@ -1,0 +1,19 @@
+<section class="schemes" id="schemes">
+  <div class="container">
+    <div class="section-tag">Government Schemes</div>
+    <h2 class="section-title">Schemes We Operate Under</h2>
+    <p class="section-sub">
+      SBS Educational Society is an active implementing partner for national skill development missions.
+    </p>
+
+    <div class="schemes-grid">
+      @for (scheme of schemes; track scheme) {
+  <div class="scheme-card">
+    <div class="scheme-label">{{ scheme.label }}</div>
+    <h3>{{ scheme.title }}</h3>
+    <p>{{ scheme.desc }}</p>
+  </div>
+}
+    </div>
+  </div>
+</section>
