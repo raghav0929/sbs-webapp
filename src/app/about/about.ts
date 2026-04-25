@@ -7,19 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   regdBoxes = [
-    {
-      title: 'Registered Office',
-      text: 'Vill. Kulgran, P.O. Gohalni,<br/>Tehsil Nangal, Distt. Ropar,<br/>Punjab – 140126'
-    },
-    {
-      title: 'Registration Details',
-      text: 'Registered under Societies Act 1860<br/>Vide No. 1590<br/>Also registered with Planning Commission of India'
-    },
-    {
-      title: 'Memorandum & Bye Laws',
-      text: 'SBS Educational Society operates under a formal Memorandum of Association governing all activities and governance.'
-    }
-  ];
+  {
+    title: 'Registered Office',
+    text: 'Vill. Kulgran, P.O. Gohalni,<br/>Tehsil Nangal, Distt. Rupnagar,<br/>Punjab – 140126'
+  },
+  {
+    title: 'Registration Details',
+    text: 'Registered under Societies Registration Act (XXI of 1860)<br/>and as amended by Punjab Amendment Act, 1957<br/>Registration No: 065 of 2022-2023<br/>Date: 20 May, 2022'
+  },
+  {
+    title: 'Memorandum & Bye Laws',
+    text: 'SBS Educational Society operates under a formal Memorandum of Association governing all activities and governance.'
+  }
+];
 
   paragraphs = [
     'SBS Educational Society was founded with a vision to bring quality education and skill development to underserved communities in Punjab. Since our inception, we have been committed to the holistic growth of youth through vocational training, academic support, and placement assistance.',
